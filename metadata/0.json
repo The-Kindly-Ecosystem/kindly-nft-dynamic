@@ -1,0 +1,41 @@
+{
+    "title": "Kindly NFT",
+    "type": "object",
+    "image": "https://gateway.ipfs.io/ipns/k51qzi5uqu5dhmzi5lffdqq3639e3yyyj1enuuurudw1hpl0trn3sbly7r7mka/0.svg",
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "YGD"
+        },
+        "description": {
+            "type": "string",
+            "description": "Describes YGD"
+        }
+    },
+    "attributes": [
+        {
+            "trait_type": "Wallet",
+            "value": 120
+        },
+        {
+            "trait_type": "Stake",
+            "value": 130
+        },
+        {
+            "trait_type": "Reward",
+            "value": 3
+        },
+        {
+            "trait_type": "Child",
+            "value": 2
+        },
+        {
+            "trait_type": "Animal",
+            "value": 12
+        },
+        {
+            "trait_type": "Tree",
+            "value": 14
+        }
+    ]
+}
