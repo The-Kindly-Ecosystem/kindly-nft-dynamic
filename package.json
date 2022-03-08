@@ -1,0 +1,54 @@
+{
+  "name": "kindly",
+  "version": "0.8.0",
+  "description": "Kindly test",
+  "scripts": {
+    "compile": "npx truffle compile",
+    "console:dev": "npx truffle console --network cldev",
+    "console:kovan": "npx truffle console --network kovan",
+    "depcheck": "echo '@chainlink/box' && depcheck --ignore-dirs=build/contracts || true",
+    "solhint": "solhint ./contracts/**/*.sol",
+    "lint": "yarn solhint",
+    "migrate:dev": "npx truffle migrate --reset --network cldev",
+    "migrate:kovan": "npx truffle migrate --network kovan",
+    "test": "npx truffle test"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@chainlink/contracts": "^0.3.1",
+    "@openzeppelin/contracts": "^4.4.2",
+    "@truffle/hdwallet-provider": "^1.7.0",
+    "big-number": "^2.0.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.2",
+    "ipfs": "^0.62.0",
+    "ipns": "^0.16.0",
+    "jpeg-js": "^0.4.3",
+    "js-image-generator": "^1.0.3",
+    "pureimage": "^0.3.8",
+    "snapsvg": "^0.5.1",
+    "svg-generator": "^1.0.8",
+    "text-svg": "^1.0.4"
+  },
+  "devDependencies": {
+    "@chainlink/belt": "^0.0.4",
+    "@chainlink/test-helpers": "0.0.5",
+    "@openzeppelin/test-helpers": "^0.5.10",
+    "chai": "^4.3.0",
+    "depcheck": "^1.3.1",
+    "solhint": "^3.3.2",
+    "truffle": "^5.3.1",
+    "truffle-plugin-verify": "^0.5.21"
+  },
+  "resolutions": {
+    "**/minimist": "^0.2.1",
+    "**/node-fetch": "^2.6.1",
+    "**/yargs-parser": "^13.1.2",
+    "**/mem": "^4.0.0"
+  },
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "author": ""
+}
